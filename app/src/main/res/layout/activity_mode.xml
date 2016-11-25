@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.oms_infotech.www.gmatguru.Mode"
+    android:background="@drawable/study">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:elevation="3dp"
+            android:id="@+id/rlpractice"
+            android:background="#F6F6F6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Get Started >"
+                android:id="@+id/tvpractice"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="serif"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView2"
+                android:src="@drawable/practice"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Practice Mode"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/textView10"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView2" />
+        </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:elevation="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rlquiz"
+            android:layout_marginRight="3dp"
+            android:background="#F6F6F6"
+            android:layout_below="@+id/rlpractice">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Get Started >"
+                android:fontFamily="serif"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tvquiz"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView3"
+                android:src="@drawable/quiznew"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Quiz Mode"
+                android:fontFamily="sans-serif-smallcaps"
+                android:id="@+id/textView9"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView3" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
